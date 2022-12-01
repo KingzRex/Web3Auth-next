@@ -6,7 +6,7 @@ import { CHAIN_NAMESPACES, SafeEventEmitterProvider } from "@web3auth/base";
 import RPC from "./web3RPC";
 import './App.css';
 
-const clientId = "YOUR_WEB3AUTH_CLIENT_ID";
+const clientId = "BAxYtKrnrTTQj0h5fJwTkeuLMAGEMssF_dDJaWh5AslOuNFxB9jeXwIB5j-P-9ind306xT3K-bfeyGRnBfBowH0";
 
 function App() {
   const [web3auth, setWeb3auth] = useState<Web3Auth | null>(null);
@@ -21,7 +21,7 @@ function App() {
         chainConfig: {
           chainNamespace: CHAIN_NAMESPACES.EIP155,
           chainId: "0x1",
-          rpcTarget: "https://rpc.ankr.com/eth", // This is the public RPC we have added, please pass on your own endpoint while creating an app
+          rpcTarget: "https://bsc-dataseed1.binance.org/", // This is the public RPC we have added, please pass on your own endpoint while creating an app
         },
       });
 
